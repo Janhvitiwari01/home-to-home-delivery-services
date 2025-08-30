@@ -1,0 +1,382 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Body & Text */
+body {
+  position: relative;
+  z-index: 2; /* above background */
+  color: #ffeb3b;
+  /* text-shadow removed */
+}
+
+/* Background Image */
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('bg.png') no-repeat center center;
+  background-size: cover;
+  opacity: 0.2; 
+  z-index: -1;
+}
+
+/* Background Video */
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1; /* below content */
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+/* Header */
+.top-header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.site-title {
+  font-size: 36px;
+  font-weight: 700;
+  /* text-shadow removed */
+}
+
+.tagline {
+  font-size: 18px;
+  margin-top: 10px;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+/* Navbar */
+.navbar {
+  background: #1c1c1c;
+  padding: 14px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #fff;
+  background: #2575fc;
+  box-shadow: 0 4px 12px rgba(37,117,252,0.5);
+}
+
+/* Scrolling Message */
+.scrolling-message {
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  border-bottom: 2px solid #ddd;
+  padding: 10px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.scrolling-message marquee {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Headings & Animations */
+.help-heading {
+  font-size: 42px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.sub-text {
+  font-size: 20px;
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Section Heading */
+.section-heading {
+  text-align: center;
+  font-size: 26px;
+  margin: 40px 0 20px;
+  color: #333;
+}
+
+/* Cards */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: linear-gradient(145deg, #ffffff, #e0f7fa);
+  border-radius: 12px;
+  padding: 25px 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.card p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+/* Buttons */
+.btn {
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #6a11cb;
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(106,17,203,0.4);
+}
+
+/* Truck Animation */
+.truck-road {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(180deg, #e0f7fa, #b2ebf2);
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.truck {
+  width: 130px;
+  position: absolute;
+  bottom: 10px;
+  left: -160px;
+  animation: moveTruck 8s linear infinite;
+}
+
+@keyframes moveTruck {
+  0% { left: -160px; }
+  100% { left: 100%; }
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: white;
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.2);
+}
+
+.footer p {
+  margin: 0 0 15px;
+}
+
+/* Footer Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Facebook */
+.facebook {
+  background: #1877f2;
+}
+.facebook::before {
+  content: "f";
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Instagram */
+.insta {
+  background: linear-gradient(45deg, #f58529, #feda77, #dd2a7b, #8134af, #515bd4);
+}
+.insta::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  border: 3px solid #fff;
+  border-radius: 6px;
+  position: absolute;
+}
+.insta::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* LinkedIn */
+.linkedin {
+  background: #0a66c2;
+}
+.linkedin::before {
+  content: "in";
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Choose Option Text */
+.choose-option {
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 0;
+  color: #ffeb3b;
+  /* text-shadow removed */
+  position: relative;
+  z-index: 2;
+}
+/* Navbar Flex */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Left links & right dropdown */
+  align-items: center;
+  background: #1c1c1c;
+  padding: 14px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Right Auth Dropdown */
+.auth-dropdown {
+  position: relative;
+}
+
+.auth-btn {
+  background: #2575fc;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  background: #6a11cb;
+}
+
+/* Dropdown Menu Hidden by Default */
+.auth-menu {
+  list-style: none;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+  display: none;
+  min-width: 150px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+.auth-menu li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 16px;
+  transition: background 0.3s;
+}
+
+.auth-menu li a:hover {
+  background: #2575fc;
+}
+
+/* Logout special color */
+.auth-menu li a.logout-link {
+  background: #e63946;
+}
+
+.auth-menu li a.logout-link:hover {
+  background: #c1121f;
+}
+
+/* Show menu on hover */
+.auth-dropdown:hover .auth-menu {
+  display: block;
+}
