@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Relatives Delivery Service</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f0f4f7, #cce0ff);
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    .top-header {
+      text-align: center;
+      padding: 30px 20px;
+      background: #004080;
+      color: white;
+    }
+
+    .site-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #0066cc;
+      padding: 10px 0;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: yellow;
+    }
+
+    /* Page Section */
+    .about-section {
+      flex: 1;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 25px;
+      margin-bottom: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .card h2 {
+      font-size: 24px;
+      color: #004080;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .highlights {
+      text-align: left;
+      margin-top: 15px;
+      display: inline-block;
+    }
+
+    .highlights li {
+      margin: 8px 0;
+      list-style: "✔️ ";
+    }
+
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .gallery-item {
+      text-align: center;
+      width: 200px;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .gallery-img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .member-name {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #004080;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 15px;
+      background: #004080;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="top-header">
+    <h1 class="site-title">Relatives Delivery Service</h1>
+    <p class="tagline">Send & Receive items easily between you and your relatives</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html" class="active">About Us</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about-section">
+
+    <div class="card">
+      <h2>Who We Are</h2>
+      <p>Relatives Delivery Service is dedicated to connecting families and friends by making sending and receiving parcels easy, fast, and reliable. We aim to provide a safe and caring delivery experience.</p>
+    </div>
+
+    <div class="card">
+      <h2>Our Mission</h2>
+      <p>To ensure every parcel reaches its destination safely while maintaining the highest standard of care and service.</p>
+    </div>
+
+    <div class="card">
+      <h2>Our Vision</h2>
+      <p>To become the most trusted delivery service connecting relatives worldwide.</p>
+    </div>
+
+    <div class="card">
+      <h2>Why Choose Us?</h2>
+      <ul class="highlights">
+        <li>Fast and reliable pickups & deliveries</li>
+        <li>Friendly helpers from your own community</li>
+        <li>Affordable and transparent pricing</li>
+        <li>Dedicated support team always ready to help</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Our Team</h2>
+      <div class="image-gallery">
+        <div class="gallery-item">
+          <img src="https://img.freepik.com/premium-photo/smiling-business-man-photography-ads-office-room_108280-677.jpg" class="gallery-img" alt="Team member">
+          <p class="member-name">Ankit Sharma</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://static.vecteezy.com/system/resources/previews/025/474/309/large_2x/portrait-of-a-professional-woman-in-a-suit-business-woman-standing-in-an-office-ai-generated-photo.jpg" class="gallery-img" alt="Team member">
+          <p class="member-name">Riya Verma</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://img.freepik.com/premium-photo/portrait-handsome-smiling-asian-indian-businessman-generative-ai_895561-2890.jpg" class="gallery-img" alt="Team member">
+          <p class="member-name">Rahul Mehra</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Relatives Delivery Service | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

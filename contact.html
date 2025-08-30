@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Home to Home Delivery</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f0f4f7, #cce0ff);
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    .top-header {
+      text-align: center;
+      padding: 30px 20px;
+      background: #004080;
+      color: white;
+    }
+
+    .site-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #0066cc;
+      padding: 10px 0;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: yellow;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      flex: 1; /* लेगा बाकी बचा हुआ height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .contact-box {
+      max-width: 700px;
+      width: 100%;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .contact-box h2 {
+      font-size: 28px;
+      color: #004080;
+      margin-bottom: 15px;
+    }
+
+    .contact-box p {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: inset 0px 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .contact-info p {
+      margin: 12px 0;
+      font-size: 15px;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 15px;
+      background: #004080;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="top-header">
+    <h1 class="site-title">HOME TO HOME DELIVERY SERVICES</h1>
+    <p class="tagline">Send & Receive items easily between you and your relatives</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-box">
+      <h2>Contact Us</h2>
+      <p>We would love to hear from you. Reach out using the details below:</p>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> support@hometohome.com</p>
+        <p><strong>Phone:</strong> +91-9876543210</p>
+        <p><strong>Address:</strong> 123, Main Street, Indore, India</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Home to Home Delivery Services | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
